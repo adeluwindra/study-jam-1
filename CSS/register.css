@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(6 182 212 / var(--tw-bg-opacity, 1));
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 20px;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 95%;
+    margin: 5px 0 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #2193b0;
+    box-shadow: 0 0 8px rgba(33, 147, 176, 0.5);
+}
+
+.tombol {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+}
+
+.btncancel, .btnsignup {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btncancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btncancel:hover {
+    background-color: #c82333;
+    box-shadow: 0 5px 10px rgba(255, 0, 0, 0.3);
+}
+
+.btnsignup {
+    background-color: #007bff;
+    color: white;
+}
+
+.btnsignup:hover {
+    background-color: #0056b3;
+    box-shadow: 0 5px 10px rgba(0, 0, 255, 0.3);
+}
+
+button:active {
+    transform: scale(0.95);
+}
